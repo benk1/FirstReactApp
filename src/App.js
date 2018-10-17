@@ -1,28 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header";
+import Main_1 from "./components/Main_1";
+import Main_2 from "./components/Main_2";
+import Main_3 from "./components/Main_3";
+import Footer from "./components/Footer";
+let menu1 = [
+  {icon: "", title: "SUPERBLY RESPONSIVE", para: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis culpanesciunt nihil aut nostrum explicabo"},
+  {icon: "", title: "SQUEEKY CLEAN", para: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis culpanesciunt nihil aut nostrum explicabo"},
+  {icon: "", title: "MULTI PURPOSES", para: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis culpanesciunt nihil aut nostrum explicabo"},
+  {icon: "", title: "HIGLY RESPONSIVE ", para: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis culpanesciunt nihil aut nostrum explicabo"}
+]
 
-class App extends Component {
-  render() {
+let blog = [{title: "Blog Title",paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis" }]
+let info = [{name: "fullName", parag: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis culpanesciunt nihil aut nostrum explicabo reprehenderit "}]
+const App = (props) => {
+  
     return (
+      
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+       <Header />
+       <Main_1 menu1 = {menu1}/>
+       <Main_2  blog = {blog} />
+       <Main_3  info = {info} />
+        <Footer />
+        
       </div>
+  
     );
-  }
 }
 
 export default App;
