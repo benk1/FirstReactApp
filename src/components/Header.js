@@ -1,8 +1,7 @@
 import React from "react";
 import myImage from "../images/Header-img.png";
 const Header = () => {
-    
-    return ( 
+     return ( 
    <section className="header">
       <img src={myImage} alt="header Image" />
       <div className="header-details">

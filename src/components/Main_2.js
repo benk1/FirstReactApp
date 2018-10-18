@@ -20,12 +20,12 @@ const Main_2 = (props) => {
       </div>
      
       <div className="images">
-      <img class="image1" src={myImage2} alt="secondImage" /> 
+      <img className="image1" src={myImage2} alt="secondImage" /> 
         {blog}
        </div>
 
        <div className="images">
-      <img class="image1" src={myImage3} alt="thirdImage" /> 
+      <img className="image1" src={myImage3} alt="thirdImage" /> 
         {blog}
      </div>
   </div>

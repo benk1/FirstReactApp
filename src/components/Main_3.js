@@ -8,24 +8,27 @@ const Main_3 = (props) => {
       });
         
  return (
-    <div className="middle-page">
-       <div className="testimonial">
+<div className="middle-page">
+    <div className="testimonial">
+       
+       <div className="John">
+       {info}
        </div>
+    
        <div className="John">
        {info}
        </div>
 
+       
        <div className="John">
        {info}
        </div>
-
+    
        <div className="John">
        {info}
        </div>
-
-       <div className="John">
-       {info}
-       </div>
+    
+   </div>
 
     <div className="design">
       <section id="tabs" className="about__us-col-2-tabs">
