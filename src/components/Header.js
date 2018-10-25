@@ -3,7 +3,7 @@ import myImage from "../images/Header-img.png";
 const Header = () => {
      return ( 
    <section className="header">
-      <img src={myImage} alt="header Image" />
+      <img src={myImage} alt="header Image"  />
       <div className="header-details">
         <h1 className="header-details">
           <em>
